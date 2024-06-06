@@ -38,7 +38,7 @@ sleep(5000).then(() => {
 function calculate() {
 		newPos = curpos;
 		startNumber1 = LASTRESULT;
-		question = document.getElementById("fop"+ pos);
+		question = document.getElementById("fop"+ newPos);
 		calcType = question.innerHTML;
 		calcType = calcType.charAt(0);
 		qNumber = operands[newPos]
