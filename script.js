@@ -68,7 +68,6 @@ function calculate() {
 }
 sleep(5000).then(() => { 
 calculate()
-console.
 calculate()
 calculate()
 calculate()
