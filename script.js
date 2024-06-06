@@ -37,7 +37,6 @@ calculateFirst();
 console.log(LASTRESULT)
 function calculate() {
 		startNumber1 = LASTRESULT;
-	        pos = pos + 1
 		question = document.getElementById("fop"+ pos);
 		calcType = question.innerHTML;
 		calcType = calcType.charAt(0);
@@ -67,15 +66,27 @@ function calculate() {
   }
 }
 sleep(5000).then(() => { 
+pos = pos +1
 calculate()
+pos = pos +1
 calculate()
+pos = pos +1
 calculate()
+pos = pos +1
 calculate()
+pos = pos +1
 calculate()
+pos = pos +1
 calculate()
+pos = pos +1
 calculate()
+pos = pos +1
 calculate()
+pos = pos +1
 calculate()
+pos = pos +1
 calculate()
+pos = pos +1
 calculate()
+pos = pos +1
 });
