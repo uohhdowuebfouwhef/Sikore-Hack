@@ -34,10 +34,11 @@ function calculateFirst() {
   }
 }
 calculateFirst();
+newPos = curpos;
 console.log(LASTRESULT)
 function calculate() {
-		newPos = curpos;
 		startNumber1 = LASTRESULT;
+	        newPos = newPos + 1
 		question = document.getElementById("fop"+ newPos);
 		calcType = question.innerHTML;
 		calcType = calcType.charAt(0);
