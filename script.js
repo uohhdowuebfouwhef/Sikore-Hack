@@ -34,7 +34,6 @@ function calculateFirst() {
   }
 }
 calculateFirst();
-sleep(5000).then(() => { 
 function calculate() {
 		newPos = curpos;
 		startNumber1 = LASTRESULT;
@@ -64,6 +63,7 @@ function calculate() {
 	   	return result;
   }
 }
+sleep(5000).then(() => { 
 calculate()
 calculate()
 calculate()
