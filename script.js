@@ -6,6 +6,10 @@ LASTRESULT = 0;
 calcType = question.innerHTML;
 calcType = calcType.charAt(0);
 qNumber = operands[pos]
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function calculateFirst() {
 	if (calcType == "+") {
    	 let result = Number(startNumber) + Number(qNumber);
@@ -30,6 +34,7 @@ function calculateFirst() {
   }
 }
 calculateFirst();
+sleep(5000).then(() => { 
 function calculate() {
 		newPos = curpos;
 		startNumber = LASTRESULT;
@@ -70,3 +75,4 @@ calculate()
 calculate()
 calculate()
 calculate()
+});
