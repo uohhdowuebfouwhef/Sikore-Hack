@@ -34,6 +34,7 @@ function calculateFirst() {
   }
 }
 calculateFirst();
+console.log(LASTRESULT)
 function calculate() {
 		newPos = curpos;
 		startNumber1 = LASTRESULT;
