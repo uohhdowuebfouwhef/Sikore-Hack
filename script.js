@@ -34,34 +34,33 @@ function calculateFirst() {
   }
 }
 calculateFirst();
-newPos = curpos;
 console.log(LASTRESULT)
 function calculate() {
 		startNumber1 = LASTRESULT;
-	        newPos = newPos + 1
-		question = document.getElementById("fop"+ newPos);
+	        pos = pos + 1
+		question = document.getElementById("fop"+ pos);
 		calcType = question.innerHTML;
 		calcType = calcType.charAt(0);
-		qNumber = operands[newPos]
+		qNumber1 = operands[pos]
 	        console.log(qNumber)
-	        console.log("The new calculation is " + toString(startNumber1) +" " + toString(calcType)+" " + toString(qNumber))
+	        console.log("The new calculation is " + toString(startNumber1) +" " + toString(calcType)+" " + toString(qNumber1))
 		if (calcType == "+") {
-   	 	 let result = Number(startNumber1) + Number(qNumber);
+   	 	 let result = Number(startNumber1) + Number(qNumber1);
 	         console.log(result);
 	         LASTRESULT = result
 	         return result;
 		} else if (calcType == "-") {
-	 		let result = Number(startNumber1) - Number(qNumber);
+	 		let result = Number(startNumber1) - Number(qNumber1);
 	 		console.log(result);
 	 		LASTRESULT = result
 	 		return result;
 		} else if (calcType == "*") {
-	   		let result = Number(startNumber1) * Number(qNumber);
+	   		let result = Number(startNumber1) * Number(qNumber1);
 	   		console.log(result);
 	   		LASTRESULT = result
 	   		return result;
 		} else if (calcType == "/") {
-		 	let result = Number(startNumber1) / Number(qNumber);
+		 	let result = Number(startNumber1) / Number(qNumber1);
 		 	LASTRESULT = result
 	 	 	console.log(result);
 	   	return result;
