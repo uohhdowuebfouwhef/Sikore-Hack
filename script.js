@@ -42,6 +42,7 @@ function calculate() {
 		calcType = question.innerHTML;
 		calcType = calcType.charAt(0);
 		qNumber = operands[newPos]
+	        console.log(qNumber)
 	        console.log("The new calculation is " + toString(startNumber1) +" " + toString(calcType)+" " + toString(qNumber))
 		if (calcType == "+") {
    	 	 let result = Number(startNumber1) + Number(qNumber);
@@ -67,6 +68,7 @@ function calculate() {
 }
 sleep(5000).then(() => { 
 calculate()
+console.
 calculate()
 calculate()
 calculate()
