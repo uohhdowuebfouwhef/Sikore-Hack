@@ -1,4 +1,4 @@
-** Ein HACK für http://sikore.schiffner-tischer.de **
+# Ein HACK für http://sikore.schiffner-tischer.de 
 
 - Zeigt alle antworten automatisch an
 - Developer Tools werden benötigt (Auf PC oder Laptop strg + shift + c oder F12)
