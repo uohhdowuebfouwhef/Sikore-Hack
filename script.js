@@ -65,7 +65,7 @@ function calculate(posit) {
 }
 position = 0;
 while (num < 100) {
-   position = position +1
+   position += 1
    console.log(position)
    calculate(position)
 }
