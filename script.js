@@ -6,9 +6,7 @@ LASTRESULT = 0;
 calcType = question.innerHTML;
 calcType = calcType.charAt(0);
 qNumber = operands[pos]
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
+num = 11
 
 function calculateFirst() {
 	if (calcType == "+") {
@@ -65,16 +63,8 @@ function calculate(posit) {
 	   	return result;
   }
 }
-sleep(5000).then(() => { 
-calculate(1)
-calculate(2)
-calculate(3)
-calculate(4)
-calculate(5)
-calculate(6)
-calculate(7)
-calculate(8)
-calculate(9)
-calculate(10)
-calculate(11)
-});
+position = 0;
+while (num < 100) {
+   position = position +1
+   calculate(position)
+}
