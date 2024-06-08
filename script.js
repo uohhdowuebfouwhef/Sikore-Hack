@@ -35,12 +35,12 @@ function calculateFirst() {
 }
 calculateFirst();
 console.log(LASTRESULT)
-function calculate() {
+function calculate(posit) {
 		startNumber1 = LASTRESULT;
-		question = document.getElementById("fop"+ pos);
+		question = document.getElementById("fop"+ posit);
 		calcType = question.innerHTML;
 		calcType = calcType.charAt(0);
-		qNumber1 = operands[pos]
+		qNumber1 = operands[posit]
 	        console.log(qNumber)
 	        console.log("The new calculation is " + toString(startNumber1) +" " + toString(calcType)+" " + toString(qNumber1))
 		if (calcType == "+") {
@@ -66,27 +66,15 @@ function calculate() {
   }
 }
 sleep(5000).then(() => { 
-pos = pos +1
-calculate()
-pos = pos +1
-calculate()
-pos = pos +1
-calculate()
-pos = pos +1
-calculate()
-pos = pos +1
-calculate()
-pos = pos +1
-calculate()
-pos = pos +1
-calculate()
-pos = pos +1
-calculate()
-pos = pos +1
-calculate()
-pos = pos +1
-calculate()
-pos = pos +1
-calculate()
-pos = pos +1
+calculate(1)
+calculate(2)
+calculate(3)
+calculate(4)
+calculate(5)
+calculate(6)
+calculate(7)
+calculate(8)
+calculate(9)
+calculate(10)
+calculate(11)
 });
