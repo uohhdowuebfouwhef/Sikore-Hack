@@ -39,6 +39,7 @@ function calculate(posit) {
 		calcType = question.innerHTML;
 		calcType = calcType.charAt(0);
 		qNumber1 = operands[posit]
+	        console.log("Last result: " + startNumber1 + " Current Number" + qNumber1)
 		if (calcType == "+") {
    	 	 let result = Number(startNumber1) + Number(qNumber1);
 	         console.log(result);
