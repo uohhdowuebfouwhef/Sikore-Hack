@@ -39,8 +39,6 @@ function calculate(posit) {
 		calcType = question.innerHTML;
 		calcType = calcType.charAt(0);
 		qNumber1 = operands[posit]
-	        console.log(qNumber1)
-	        console.log("The new calculation is " + toString(startNumber1) +" " + toString(calcType)+" " + toString(qNumber1))
 		if (calcType == "+") {
    	 	 let result = Number(startNumber1) + Number(qNumber1);
 	         console.log(result);
