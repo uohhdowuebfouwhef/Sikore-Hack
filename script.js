@@ -20,12 +20,12 @@ function calculateFirst() {
 				console.log(result);
 				LASTRESULT = result;
 				return result;
-			} else if (Number(qNumber1) < Number(startNumber1)) {
+		} else if (Number(qNumber1) < Number(startNumber1)) {
 				let result = Number(startNumber1) - Number(qNumber1);
 	 		        console.log(result);
-	 		        LASTRESULT = result
+	 		        LASTRESULT = result;
 	 		        return result;
-			}
+		}
 	} else if (calcType == "*") {
 	   let result = Number(startNumber) * Number(qNumber);
 	   console.log(result);
@@ -37,7 +37,7 @@ function calculateFirst() {
 				console.log(result);
 				LASTRESULT = result;
 				return result;
-			} else if (Number(qNumber1) < Number(startNumber1)) {
+		} else if (Number(qNumber1) < Number(startNumber1)) {
 				let result = Number(startNumber1) / Number(qNumber1);
 	 		        console.log(result);
 	 		        LASTRESULT = result
@@ -53,7 +53,7 @@ function calculate(posit) {
 		calcType = question.innerHTML;
 		calcType = calcType.charAt(0);
 		qNumber1 = operands[posit]
-	        console.log("Last result: " + startNumber1 + " Current Number" + qNumber1)
+	        console.log("Last result: " + startNumber1 + " Current Number: " + qNumber1)
 		if (calcType == "+") {
    	 	 let result = Number(startNumber1) + Number(qNumber1);
 	         console.log(result);
@@ -68,7 +68,7 @@ function calculate(posit) {
 			} else if (Number(qNumber1) < Number(startNumber1)) {
 				let result = Number(startNumber1) - Number(qNumber1);
 	 		        console.log(result);
-	 		        LASTRESULT = result
+	 		        LASTRESULT = result;
 	 		        return result;
 			}
 		} else if (calcType == "*") {
