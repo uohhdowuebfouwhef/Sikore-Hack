@@ -46,19 +46,34 @@ function calculate(posit) {
 	         LASTRESULT = result
 	         return result;
 		} else if (calcType == "-") {
-	 		let result = Number(startNumber1) - Number(qNumber1);
-	 		console.log(result);
-	 		LASTRESULT = result
-	 		return result;
+			if (Number(startNumber1) < Number(qNumber1)) {
+				let result = Number(qNumber1) - Number(startNumber1);
+				console.log(result);
+				LASTRESULT = result;
+				return result;
+			} else if (Number(qNumber1) < Number(startNumber1)) {
+				let result = Number(startNumber1) - Number(qNumber1);
+	 		        console.log(result);
+	 		        LASTRESULT = result
+	 		        return result;
+			}
 		} else if (calcType == "*") {
 	   		let result = Number(startNumber1) * Number(qNumber1);
 	   		console.log(result);
 	   		LASTRESULT = result
 	   		return result;
 		} else if (calcType == "/") {
-		 	let result = Number(startNumber1) / Number(qNumber1);
-		 	LASTRESULT = result
-	 	 	console.log(result);
+		 	if (Number(startNumber1) < Number(qNumber1)) {
+				let result = Number(qNumber1) / Number(startNumber1);
+				console.log(result);
+				LASTRESULT = result;
+				return result;
+			} else if (Number(qNumber1) < Number(startNumber1)) {
+				let result = Number(startNumber1) / Number(qNumber1);
+	 		        console.log(result);
+	 		        LASTRESULT = result
+	 		        return result;
+			}
 	   	return result;
   }
 }
